@@ -1,0 +1,1 @@
+web: gunicorn csvinay.wsgi --log-file -

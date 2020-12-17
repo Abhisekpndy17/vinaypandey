@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Abhishek || Service
+{% endblock %}
+{% block content %}
+<section class="pb-4">
+    <div class="container text-center text-md-left">
+        <div class="text-white p-2 text-center mt-2 rounded" style="background: #334237;">
+            <div class="display-2">Our Services</div>
+            <div class="text-left pl-3 mt-4">
+                <h2>Vision: - “Creation of wealth through legal route”</h2>
+            <p>Mission: - “Make more efficient entrepreneurs towards the creation of their
+                Wealth through good Compliance practices”.</p>
+            </div>
+            
+        </div>
+        <div class="row mt-5">
+            <h1 class="pb-3">Major Skills and Expertise:</h1>
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
+                <div class="card shadow-lg">
+                    <img src="{% static 'image/start.png' %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Start Up</h3>
+                        <p class="card-text">Incorporation of Private Limited/LLPs/Partnership Firm/Section 8
+                            Company/NIDHI Company/Producer Company etc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
+                <div class="card shadow-lg">
+                    <img src="{% static 'image/img1.png' %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">SEBI & RBI Compliences</h3>
+                        <p class="card-text">Consultant in SEBI Regulations and FEMA
+                            provisions. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
+                <div class="card shadow-lg">
+                    <img src="{% static 'image/img5.png' %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Tax Planning & Tax Management</h3>
+                        <p class="card-text"> Consultant of Income Tax Returns
+                            filing, Tax planning and Tax Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end card-->
+        <div class="row mt-2">
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="card shadow-lg">
+                    <img src="{% static 'image/img2.png' %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">MCA, ROC, GST & Income Tax Compliances</h3>
+                        <p class="card-text">: Compliances of Income
+                            Tax Act, 1961, Companies Act, 2013 and Goods & Service Tax Act, 2017 and
+                            other Corporate Laws.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="card shadow-lg">
+                    <img src="{% static 'image/img2.png' %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">IPR Related Services</h3>
+                        <p class="card-text">Deals with the registration of Trademarks, Copy
+                            Rights, draft replies to the objections raised by the department, appear for
+                            hearings pertaining to the disputes related to Trademarks & Copyrights and
+                            make further appeals, if required.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
+                <div class="card shadow-lg">
+                    <img src="{% static 'image/img5.png' %}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Labour Law Compliences</h3>
+                        <p class="card-text">Deals with compliances of Labour Laws
+                            including services of PF, ESIC Registration and Returns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end card-->
+        {% include 'services.html' %}
+    </div>
+</section>
+{% endblock %}
