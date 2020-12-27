@@ -8,12 +8,12 @@ CS Vinay Pandey
 <section>
   <div class="container">
     <!-- layout-->
-    <div class="row mt-2 mb-2 pt-2 pb-3 justify-content-center">
+    <div class="row mt-2 pt-2 pb-3 justify-content-center">
 
       <div class="col-md-6 col-lg-6 mx-auto">
         <img src="{% static 'image/img5.png' %}" alt="ASD" class="img-fluid" data-aos="fade-right" data-aos-delay="500">
       </div>
-      <div class="col-md-6 col-lg-6 mt-5  pb-5 pt-5 mr-auto rounded" data-aos="zoom-in-up" data-aos-delay="100">
+      <div class="col-md-6 col-lg-6 mt-5 pt-5 mr-auto rounded" data-aos="zoom-in-up" data-aos-delay="100">
         <h1>Namaste !,</h1>
         <div class="display-3"><span>I'm</span> Vinay Pandey</div>
         <p class="mt-3"><span class="bold">CS Vinay Pandey & Associates,( Company Secretaries ) </span> <br><br>
@@ -35,31 +35,37 @@ CS Vinay Pandey
       <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
         <div class="card shadow-lg">
           <img src="{% static 'image/img5.png' %}" alt="" class="card-img-top">
+          <a href="{% url 'startup' %}" style="text-decoration: none;color: #334237;" class="hovered">
           <div class="card-body">
             <h3 class="card-title">Start Up</h3>
             <p class="card-text">Incorporation of Private Limited/LLPs/Partnership Firm/Section 8
               Company/NIDHI Company/Producer Company etc.</p>
           </div>
+        </a>
         </div>
       </div>
       <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
         <div class="card shadow-lg">
           <img src="{% static 'image/img6.png' %}" alt="" class="card-img-top">
+          <a href="{% url 'sebi' %}" style="text-decoration: none;color: #334237;">
           <div class="card-body">
             <h3 class="card-title">SEBI & RBI Compliences</h3>
             <p class="card-text">Consultant in SEBI Regulations and FEMA
               provisions. </p>
           </div>
+        </a>
         </div>
       </div>
       <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
         <div class="card shadow-lg">
           <img src="{% static 'image/img5.png' %}" alt="" class="card-img-top">
+          <a href="{% url 'taxplanning' %}" style="text-decoration: none; color: #334237;">
           <div class="card-body">
             <h3 class="card-title">Tax Planning & Tax Management</h3>
             <p class="card-text"> Consultant of Income Tax Returns
               filing, Tax planning and Tax Management</p>
           </div>
+        </a>
         </div>
       </div>
     </div>
@@ -68,17 +74,20 @@ CS Vinay Pandey
       <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
         <div class="card shadow-lg">
           <img src="{% static 'image/img2.png' %}" alt="" class="card-img-top">
+          <a href="{% url 'mca&roc' %}" style="text-decoration: none; color: #334237;">
           <div class="card-body">
             <h3 class="card-title">MCA, ROC, GST & Income Tax Compliances</h3>
             <p class="card-text">: Compliances of Income
               Tax Act, 1961, Companies Act, 2013 and Goods & Service Tax Act, 2017 and
               other Corporate Laws.</p>
           </div>
+        </a>
         </div>
       </div>
       <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
         <div class="card shadow-lg">
           <img src="{% static 'image/img2.png' %}" alt="" class="card-img-top">
+          <a href="{% url 'iprrelated' %}" style="text-decoration: none; color: #334237;">
           <div class="card-body">
             <h3 class="card-title">IPR Related Services</h3>
             <p class="card-text">Deals with the registration of Trademarks, Copy
@@ -86,25 +95,30 @@ CS Vinay Pandey
               hearings pertaining to the disputes related to Trademarks & Copyrights and
               make further appeals, if required.</p>
           </div>
+        </a>
         </div>
       </div>
       <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
         <div class="card shadow-lg">
           <img src="{% static 'image/img5.png' %}" alt="" class="card-img-top">
+          <a href="{% url 'labour' %}" style="text-decoration: none; color: #334237;">
           <div class="card-body">
             <h3 class="card-title">Labour Law Compliences</h3>
             <p class="card-text">Deals with compliances of Labour Laws
               including services of PF, ESIC Registration and Returns.</p>
           </div>
+        </a>
         </div>
       </div>
     </div>
     <!--end card-->
     <div class="card mt-3 shadow rounded">
+      <a href="{% url 'others' %}" style="text-decoration: none; color: #334237;">
       <div class="card-body mt-3 mb-3">
         <b> Others: </b>Deals with the matters of NCLT/NCLAT, acts as legal counsel under
         IBC, 2016 etc.
       </div>
+    </a>
     </div>
     <!--end card-->
     {% include 'testimonial.html' %}

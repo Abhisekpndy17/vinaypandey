@@ -5,28 +5,22 @@
 {% endblock  %}
 {% block content %}
 <section class="pt-5 pb-4">
-    <div class="container text-center text-md-left">
-        <div class="row text-center text-md-left">
-            <div class="col-md-10 col-lg-10 col-xl-10 mx-auto mt-3" data-aos="zoom-in" data-aos-delay="100">
-                <div class="display-1 mb-4 font-weight-bold">This is blog post</div>
-            </div>
-            {% for post in posts %}
-                
-                <div class="card mt-3 mb-3">
-                    <div class="card-header">
-                        {{post.title}}
-                    </div>
-                    <div class="card-body">
-                        <small class="text-muted">Posted at {{post.date_added}}</small>
-                      <blockquote class="blockquote mb-0">
-                        <p>{{post.body | safe }}</p>
-                        <small class="text-muted">Abhishek</small>
-                      </blockquote>
-                      
-                    </div>
-                  </div>
-            {% endfor %}
-        </div>
+  <div class="container text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-10 col-lg-10 col-xl-10 mx-auto mt-3" data-aos="zoom-in" data-aos-delay="100">
+        {% for post in posts %}
+        <section class="mb-3 pb-3">
+          <h3 class="fw-bold"><i class="fab fa-audible"></i> {{post.title}}</h3>
+          <p class="text-muted">Posted at <i class="fas fa-calendar-week"></i> {{post.date_added}}</p>
+          <blockquote class="blockquote mb-0">
+            <p class="font-monospace">{{post.intro | safe }}</p>
+            <a href="{% url 'post_details' post.slug %}" class="btn text-white" style="background: #214252;"><i class="fas fa-chevron-circle-down"></i> read more</a>
+          </blockquote>
+          <hr>
+        </section>
+        {% endfor %}
+      </div>
     </div>
+  </div>
 </section>
 {% endblock  %}
